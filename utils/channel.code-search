@@ -1,0 +1,584 @@
+# Query: channel
+# ContextLines: 1
+
+160 results - 48 files
+
+cfg/default.yaml:
+  113  fliplr: 0.5 # (float) image flip left-right (probability)
+  114: bgr: 0.0 # (float) image channel BGR (probability)
+  115  mosaic: 1.0 # (float) image mosaic (probability)
+
+cfg/models/rt-detr/rtdetr-l.yaml:
+  6  scales: # model compound scaling constants, i.e. 'model=yolov8n-cls.yaml' will call yolov8-cls.yaml with scale 'n'
+  7:   # [depth, width, max_channels]
+  8    l: [1.00, 1.00, 1024]
+
+cfg/models/rt-detr/rtdetr-resnet50.yaml:
+  6  scales: # model compound scaling constants, i.e. 'model=yolov8n-cls.yaml' will call yolov8-cls.yaml with scale 'n'
+  7:   # [depth, width, max_channels]
+  8    l: [1.00, 1.00, 1024]
+
+cfg/models/rt-detr/rtdetr-resnet101.yaml:
+  6  scales: # model compound scaling constants, i.e. 'model=yolov8n-cls.yaml' will call yolov8-cls.yaml with scale 'n'
+  7:   # [depth, width, max_channels]
+  8    l: [1.00, 1.00, 1024]
+
+cfg/models/rt-detr/rtdetr-x.yaml:
+  6  scales: # model compound scaling constants, i.e. 'model=yolov8n-cls.yaml' will call yolov8-cls.yaml with scale 'n'
+  7:   # [depth, width, max_channels]
+  8    x: [1.00, 1.00, 2048]
+
+cfg/models/v3/yolov3-spp.yaml:
+  6  depth_multiple: 1.0 # model depth multiple
+  7: width_multiple: 1.0 # layer channel multiple
+  8  
+
+cfg/models/v3/yolov3-tiny.yaml:
+  6  depth_multiple: 1.0 # model depth multiple
+  7: width_multiple: 1.0 # layer channel multiple
+  8  
+
+cfg/models/v3/yolov3.yaml:
+  6  depth_multiple: 1.0 # model depth multiple
+  7: width_multiple: 1.0 # layer channel multiple
+  8  
+
+cfg/models/v5/yolov5-p6.yaml:
+  6  scales: # model compound scaling constants, i.e. 'model=yolov5n-p6.yaml' will call yolov5-p6.yaml with scale 'n'
+  7:   # [depth, width, max_channels]
+  8    n: [0.33, 0.25, 1024]
+
+cfg/models/v5/yolov5.yaml:
+  6  scales: # model compound scaling constants, i.e. 'model=yolov5n.yaml' will call yolov5.yaml with scale 'n'
+  7:   # [depth, width, max_channels]
+  8    n: [0.33, 0.25, 1024]
+
+cfg/models/v6/yolov6.yaml:
+  7  scales: # model compound scaling constants, i.e. 'model=yolov6n.yaml' will call yolov8.yaml with scale 'n'
+  8:   # [depth, width, max_channels]
+  9    n: [0.33, 0.25, 1024]
+
+cfg/models/v8/yolov8-cls-resnet50.yaml:
+  6  scales: # model compound scaling constants, i.e. 'model=yolov8n-cls.yaml' will call yolov8-cls.yaml with scale 'n'
+  7:   # [depth, width, max_channels]
+  8    n: [0.33, 0.25, 1024]
+
+cfg/models/v8/yolov8-cls-resnet101.yaml:
+  6  scales: # model compound scaling constants, i.e. 'model=yolov8n-cls.yaml' will call yolov8-cls.yaml with scale 'n'
+  7:   # [depth, width, max_channels]
+  8    n: [0.33, 0.25, 1024]
+
+cfg/models/v8/yolov8-cls.yaml:
+  6  scales: # model compound scaling constants, i.e. 'model=yolov8n-cls.yaml' will call yolov8-cls.yaml with scale 'n'
+  7:   # [depth, width, max_channels]
+  8    n: [0.33, 0.25, 1024]
+
+cfg/models/v8/yolov8-ghost-p2.yaml:
+  6  scales: # model compound scaling constants, i.e. 'model=yolov8n.yaml' will call yolov8.yaml with scale 'n'
+  7:   # [depth, width, max_channels]
+  8    n: [0.33, 0.25, 1024] # YOLOv8n-ghost-p2 summary: 491 layers, 2033944 parameters,   2033928 gradients,  13.8 GFLOPs
+
+cfg/models/v8/yolov8-ghost-p6.yaml:
+  6  scales: # model compound scaling constants, i.e. 'model=yolov8n-p6.yaml' will call yolov8-p6.yaml with scale 'n'
+  7:   # [depth, width, max_channels]
+  8    n: [0.33, 0.25, 1024] # YOLOv8n-ghost-p6 summary: 529 layers, 2901100 parameters, 2901084 gradients, 5.8 GFLOPs
+
+cfg/models/v8/yolov8-ghost.yaml:
+  7  scales: # model compound scaling constants, i.e. 'model=yolov8n.yaml' will call yolov8.yaml with scale 'n'
+  8:   # [depth, width, max_channels]
+  9    n: [0.33, 0.25, 1024] # YOLOv8n-ghost summary: 403 layers,  1865316 parameters,  1865300 gradients,   5.8 GFLOPs
+
+cfg/models/v8/yolov8-obb.yaml:
+  6  scales: # model compound scaling constants, i.e. 'model=yolov8n.yaml' will call yolov8.yaml with scale 'n'
+  7:   # [depth, width, max_channels]
+  8    n: [0.33, 0.25, 1024] # YOLOv8n summary: 225 layers,  3157200 parameters,  3157184 gradients,   8.9 GFLOPs
+
+cfg/models/v8/yolov8-p2.yaml:
+  6  scales: # model compound scaling constants, i.e. 'model=yolov8n.yaml' will call yolov8.yaml with scale 'n'
+  7:   # [depth, width, max_channels]
+  8    n: [0.33, 0.25, 1024]
+
+cfg/models/v8/yolov8-p6.yaml:
+  6  scales: # model compound scaling constants, i.e. 'model=yolov8n-p6.yaml' will call yolov8-p6.yaml with scale 'n'
+  7:   # [depth, width, max_channels]
+  8    n: [0.33, 0.25, 1024]
+
+cfg/models/v8/yolov8-pose-p6.yaml:
+  7  scales: # model compound scaling constants, i.e. 'model=yolov8n-p6.yaml' will call yolov8-p6.yaml with scale 'n'
+  8:   # [depth, width, max_channels]
+  9    n: [0.33, 0.25, 1024]
+
+cfg/models/v8/yolov8-pose.yaml:
+  7  scales: # model compound scaling constants, i.e. 'model=yolov8n-pose.yaml' will call yolov8-pose.yaml with scale 'n'
+  8:   # [depth, width, max_channels]
+  9    n: [0.33, 0.25, 1024]
+
+cfg/models/v8/yolov8-rtdetr.yaml:
+  6  scales: # model compound scaling constants, i.e. 'model=yolov8n.yaml' will call yolov8.yaml with scale 'n'
+  7:   # [depth, width, max_channels]
+  8    n: [0.33, 0.25, 1024] # YOLOv8n summary: 225 layers,  3157200 parameters,  3157184 gradients,   8.9 GFLOPs
+
+cfg/models/v8/yolov8-seg-p6.yaml:
+  6  scales: # model compound scaling constants, i.e. 'model=yolov8n-seg-p6.yaml' will call yolov8-seg-p6.yaml with scale 'n'
+  7:   # [depth, width, max_channels]
+  8    n: [0.33, 0.25, 1024]
+
+cfg/models/v8/yolov8-seg.yaml:
+  7  scales: # model compound scaling constants, i.e. 'model=yolov8n-seg.yaml' will call yolov8-seg.yaml with scale 'n'
+  8:   # [depth, width, max_channels]
+  9    n: [0.33, 0.25, 1024]
+
+cfg/models/v8/yolov8-world.yaml:
+  6  scales: # model compound scaling constants, i.e. 'model=yolov8n.yaml' will call yolov8.yaml with scale 'n'
+  7:   # [depth, width, max_channels]
+  8    n: [0.33, 0.25, 1024] # YOLOv8n summary: 225 layers,  3157200 parameters,  3157184 gradients,   8.9 GFLOPs
+
+cfg/models/v8/yolov8-worldv2.yaml:
+  6  scales: # model compound scaling constants, i.e. 'model=yolov8n.yaml' will call yolov8.yaml with scale 'n'
+  7:   # [depth, width, max_channels]
+  8    n: [0.33, 0.25, 1024] # YOLOv8n summary: 225 layers,  3157200 parameters,  3157184 gradients,   8.9 GFLOPs
+
+cfg/models/v8/yolov8.yaml:
+  6  scales: # model compound scaling constants, i.e. 'model=yolov8n.yaml' will call yolov8.yaml with scale 'n'
+  7:   # [depth, width, max_channels]
+  8    n: [0.33, 0.25, 1024] # YOLOv8n summary: 225 layers,  3157200 parameters,  3157184 gradients,   8.9 GFLOPs
+
+data/augment.py:
+   630      """
+   631:     This class is responsible for performing random adjustments to the Hue, Saturation, and Value (HSV) channels of an
+   632      image.
+
+   638          """
+   639:         Initialize RandomHSV class with gains for each HSV channel.
+   640  
+
+   838              n = len(instances)
+   839:             _, w, _ = im.shape  # height, width, channels
+   840              im_new = np.zeros(im.shape, np.uint8)
+
+  1149          size (int): image size
+  1150:         mean (tuple): mean values of RGB channels
+  1151:         std (tuple): std values of RGB channels
+  1152          interpolation (T.InterpolationMode): interpolation mode. default is T.InterpolationMode.BILINEAR.
+
+  1210          ratio (tuple): aspect ratio range of the image. default is (3./4., 4./3.)
+  1211:         mean (tuple): mean values of RGB channels
+  1212:         std (tuple): std values of RGB channels
+  1213          hflip (float): probability of horizontal flip
+
+engine/exporter.py:
+   429              ov_model.set_rt_info("YOLOv8", ["model_info", "model_type"])
+   430:             ov_model.set_rt_info(True, ["model_info", "reverse_input_channels"])
+   431              ov_model.set_rt_info(114, ["model_info", "pad_value"])
+
+   813              output_integer_quantized_tflite=self.args.int8,
+   814:             quant_type="per-tensor",  # "per-tensor" (faster) or "per-channel" (slower but more accurate)
+   815              custom_input_op_name_np_data_path=np_data,
+
+  1138          super().__init__()
+  1139:         _, _, h, w = im.shape  # batch, channel, height, width
+  1140          self.model = model
+
+engine/tuner.py:
+  97              "fliplr": (0.0, 1.0),  # image flip left-right (probability)
+  98:             "bgr": (0.0, 1.0),  # image channel bgr (probability)
+  99              "mosaic": (0.0, 1.0),  # image mixup (probability)
+
+models/sam/amg.py:
+  104      offset = torch.tensor([[x0, y0, x0, y0]], device=boxes.device)
+  105:     # Check if boxes has a channel dimension
+  106      if len(boxes.shape) == 3:
+
+  114      offset = torch.tensor([[x0, y0]], device=points.device)
+  115:     # Check if points has a channel dimension
+  116      if len(points.shape) == 3:
+
+models/sam/modules/decoders.py:
+  17      Attributes:
+  18:         transformer_dim (int): Channel dimension for the transformer module.
+  19          transformer (nn.Module): The transformer module used for mask prediction.
+
+  42          Args:
+  43:             transformer_dim (int): the channel dimension of the transformer module
+  44              transformer (nn.Module): the transformer used to predict masks
+
+models/sam/modules/encoders.py:
+   52              patch_size (int): Patch size.
+   53:             in_chans (int): Number of input image channels.
+   54              embed_dim (int): Patch embedding dimension.
+
+  162              to the image encoder, as (H, W).
+  163:           mask_in_chans (int): The number of hidden channels used for
+  164              encoding input masks.
+
+  349          Args:
+  350:             dim (int): Number of input channels.
+  351              num_heads (int): Number of attention heads in each ViT block.
+
+  412          Args:
+  413:             dim (int): Number of input channels.
+  414              num_heads (int): Number of attention heads.
+
+  593              padding (Tuple): padding size of the projection layer.
+  594:             in_chans (int): Number of input image channels.
+  595              embed_dim (int): Patch embedding dimension.
+
+models/sam/modules/tiny_encoder.py:
+   26      def __init__(self, a, b, ks=1, stride=1, pad=0, dilation=1, groups=1, bn_weight_init=1):
+   27:         """Initializes the MBConv model with given input channels, output channels, expansion ratio, activation, and
+   28          drop path.
+
+  521  
+  522:     def __init__(self, num_channels: int, eps: float = 1e-6) -> None:
+  523:         """Initialize LayerNorm2d with the number of channels and an optional epsilon."""
+  524          super().__init__()
+  525:         self.weight = nn.Parameter(torch.ones(num_channels))
+  526:         self.bias = nn.Parameter(torch.zeros(num_channels))
+  527          self.eps = eps
+
+  542          img_size (int): Input image size.
+  543:         in_chans (int): Number of input channels.
+  544          num_classes (int): Number of classification classes.
+
+  584              img_size (int, optional): The input image size. Defaults to 224.
+  585:             in_chans (int, optional): Number of input channels. Defaults to 3.
+  586              num_classes (int, optional): Number of classification classes. Defaults to 1000.
+
+models/sam/modules/transformer.py:
+   20          depth (int): The number of layers in the transformer.
+   21:         embedding_dim (int): The channel dimension for the input embeddings.
+   22          num_heads (int): The number of heads for multihead attention.
+   23:         mlp_dim (int): The internal channel dimension for the MLP block.
+   24          layers (nn.ModuleList): The list of TwoWayAttentionBlock layers that make up the transformer.
+
+   42            depth (int): number of layers in the transformer
+   43:           embedding_dim (int): the channel dimension for the input embeddings
+   44            num_heads (int): the number of heads for multihead attention. Must
+   45              divide embedding_dim
+   46:           mlp_dim (int): the channel dimension internal to the MLP block
+   47            activation (nn.Module): the activation to use in the MLP block
+
+  149          Args:
+  150:           embedding_dim (int): the channel dimension of the embeddings
+  151            num_heads (int): the number of heads in the attention layers
+
+nn/autobackend.py:
+  444          """
+  445:         b, ch, h, w = im.shape  # batch, channel, height, width
+  446          if self.fp16 and im.dtype != torch.float16:
+
+  621          Args:
+  622:             imgsz (tuple): The shape of the dummy input tensor in the format (batch_size, channels, height, width)
+  623          """
+
+nn/tasks.py:
+  276  
+  277:     #def __init__(self, cfg="yolov8n.yaml", ch=3, nc=None, verbose=True):  # model, input channels, number of classes
+  278:     def __init__(self, cfg="yolov8n.yaml", ch=4, nc=None, verbose=True):  # model, input channels, number of classes
+  279          """Initialize the YOLOv8 detection model with the given config and parameters."""
+
+  284          ch = 4# 
+  285:         self.yaml["ch"] = 4 #self.yaml.get("ch", ch)  # input channels
+  286          if nc and nc != self.yaml["nc"]:
+
+  396      def __init__(self, cfg="yolov8n-cls.yaml", ch=3, nc=None, verbose=True):
+  397:         """Init ClassificationModel with YAML, channels, number of classes, verbose flag."""
+  398          super().__init__()
+
+  405          # Define model
+  406:         ch = self.yaml["ch"] = self.yaml.get("ch", ch)  # input channels
+  407          if nc and nc != self.yaml["nc"]:
+
+  434                  i = types.index(nn.Conv2d)  # nn.Conv2d index
+  435:                 if m[i].out_channels != nc:
+  436:                     m[i] = nn.Conv2d(m[i].in_channels, nc, m[i].kernel_size, m[i].stride, bias=m[i].bias is not None)
+  437  
+
+  452          cfg (str): The configuration file path or preset string. Default is 'rtdetr-l.yaml'.
+  453:         ch (int): Number of input channels. Default is 3 (RGB).
+  454          nc (int, optional): Number of classes for object detection. Default is None.
+
+  468              cfg (str): Configuration file name or path.
+  469:             ch (int): Number of input channels.
+  470              nc (int, optional): Number of classes. Defaults to None.
+
+  831  
+  832: def parse_model(d, ch, verbose=True):  # model_dict, input_channels(3)
+  833      """Parse a YOLO model.yaml dictionary into a PyTorch model."""
+
+  836      # Args
+  837:     max_channels = float("inf")
+  838      nc, act, scales = (d.get(x) for x in ("nc", "activation", "scales"))
+
+  844              LOGGER.warning(f"WARNING ⚠️ no model scale passed. Assuming scale='{scale}'.")
+  845:         depth, width, max_channels = scales[scale]
+  846  
+
+  892              if c2 != nc:  # if c2 not equal to number of classes (i.e. for Classify() output)
+  893:                 c2 = make_divisible(min(c2, max_channels) * width, 8)
+  894              if m is C2fAttn:
+  895:                 args[1] = make_divisible(min(args[1], max_channels // 2) * width, 8)  # embed channels
+  896                  args[2] = int(
+  897:                     max(round(min(args[2], max_channels // 2 // 32)) * width, 1) if args[2] > 1 else args[2]
+  898                  )  # num heads
+
+  920              if m is Segment:
+  921:                 args[2] = make_divisible(min(args[2], max_channels) * width, 8)
+  922:         elif m is RTDETRDecoder:  # special case, channels arg must be passed in index 1
+  923              args.insert(1, [ch[x] for x in f])
+
+nn/modules/__init__.py:
+  51      CBAM,
+  52:     ChannelAttention,
+  53      Concat,
+
+  88      "GhostConv",
+  89:     "ChannelAttention",
+  90      "SpatialAttention",
+
+nn/modules/block.py:
+   50      def __init__(self, c1=16):
+   51:         """Initialize a convolutional layer with a given number of input channels."""
+   52          super().__init__()
+
+   59          """Applies a transformer layer on input tensor 'x' and returns a tensor."""
+   60:         b, _, a = x.shape  # batch, channels, anchors
+   61          return self.conv(x.view(b, 4, self.c1, a).transpose(2, 1).softmax(1)).view(b, 4, a)
+
+   92      def __init__(self, c1, cm, c2):
+   93:         """Initialize the SPP layer with input/output channels and specified kernel sizes for max pooling."""
+   94          super().__init__()
+
+  123      def __init__(self, c1, cm, c2, k=3, n=6, lightconv=False, shortcut=False, act=nn.ReLU()):
+  124:         """Initializes a CSP Bottleneck with 1 convolution using specified input and output channels."""
+  125          super().__init__()
+
+  143      def __init__(self, c1, c2, k=(5, 9, 13)):
+  144:         """Initialize the SPP layer with input/output channels and pooling kernel sizes."""
+  145          super().__init__()
+  146:         c_ = c1 // 2  # hidden channels
+  147          self.cv1 = Conv(c1, c_, 1, 1)
+
+  161          """
+  162:         Initializes the SPPF layer with given input/output channels and kernel size.
+  163  
+
+  166          super().__init__()
+  167:         c_ = c1 // 2  # hidden channels
+  168          self.cv1 = Conv(c1, c_, 1, 1)
+
+  201          super().__init__()
+  202:         self.c = int(c2 * e)  # hidden channels
+  203          self.cv1 = Conv(c1, 2 * self.c, 1, 1)
+  204          self.cv2 = Conv(2 * self.c, c2, 1)  # optional act=FReLU(c2)
+  205:         # self.attention = ChannelAttention(2 * self.c)  # or SpatialAttention()
+  206          self.m = nn.Sequential(*(Bottleneck(self.c, self.c, shortcut, g, k=((3, 3), (3, 3)), e=1.0) for _ in range(n)))
+
+  221          super().__init__()
+  222:         self.c = int(c2 * e)  # hidden channels
+  223          self.cv1 = Conv(c1, 2 * self.c, 1, 1)
+
+  243      def __init__(self, c1, c2, n=1, shortcut=True, g=1, e=0.5):
+  244:         """Initialize the CSP Bottleneck with given channels, number, shortcut, groups, and expansion values."""
+  245          super().__init__()
+  246:         c_ = int(c2 * e)  # hidden channels
+  247          self.cv1 = Conv(c1, c_, 1, 1)
+
+  270      def __init__(self, c1, c2, n=3, e=1.0):
+  271:         """Initialize CSP Bottleneck with a single convolution using input channels, output channels, and number."""
+  272          super().__init__()
+  273:         c_ = int(c2 * e)  # hidden channels
+  274          self.cv1 = Conv(c1, c2, 1, 1)
+
+  299          super().__init__(c1, c2, n, shortcut, g, e)
+  300:         c_ = int(c2 * e)  # hidden channels
+  301          self.m = nn.Sequential(*(GhostBottleneck(c_, c_) for _ in range(n)))
+
+  328      def __init__(self, c1, c2, shortcut=True, g=1, k=(3, 3), e=0.5):
+  329:         """Initializes a bottleneck module with given input/output channels, shortcut option, group, kernels, and
+  330          expansion.
+
+  332          super().__init__()
+  333:         c_ = int(c2 * e)  # hidden channels
+  334          self.cv1 = Conv(c1, c_, k[0], 1)
+
+  348          super().__init__()
+  349:         c_ = int(c2 * e)  # hidden channels
+  350          self.cv1 = Conv(c1, c_, 1, 1)
+
+  446          super().__init__()
+  447:         self.c = int(c2 * e)  # hidden channels
+  448          self.cv1 = Conv(c1, 2 * self.c, 1, 1)
+
+  480          self.scale = nn.Parameter(torch.tensor([0.0]), requires_grad=True) if scale else 1.0
+  481:         self.projections = nn.ModuleList([nn.Conv2d(in_channels, ec, kernel_size=1) for in_channels in ch])
+  482          self.im_pools = nn.ModuleList([nn.AdaptiveMaxPool2d((k, k)) for _ in range(nf)])
+
+  562      def __init__(self, c1, c2, shortcut=True, g=1, k=(3, 3), e=0.5):
+  563:         """Initializes a RepBottleneck module with customizable in/out channels, shortcut option, groups and expansion
+  564          ratio.
+
+  566          super().__init__(c1, c2, shortcut, g, k, e)
+  567:         c_ = int(c2 * e)  # hidden channels
+  568          self.cv1 = RepConv(c1, c_, k[0], 1)
+
+  574      def __init__(self, c1, c2, n=1, shortcut=True, g=1, e=0.5):
+  575:         """Initializes RepCSP layer with given channels, repetitions, shortcut, groups and expansion ratio."""
+  576          super().__init__(c1, c2, n, shortcut, g, e)
+  577:         c_ = int(c2 * e)  # hidden channels
+  578          self.m = nn.Sequential(*(RepBottleneck(c_, c_, shortcut, g, e=1.0) for _ in range(n)))
+
+  584      def __init__(self, c1, c2, c3, c4, n=1):
+  585:         """Initializes CSP-ELAN layer with specified channel sizes, repetitions, and convolutions."""
+  586          super().__init__()
+
+  609      def __init__(self, c1, c2):
+  610:         """Initializes ADown module with convolution layers to downsample input from channels c1 to c2."""
+  611          super().__init__()
+
+nn/modules/conv.py:
+   18      "GhostConv",
+   19:     "ChannelAttention",
+   20      "SpatialAttention",
+
+  141      def __init__(self, c1, c2, k=1, s=1, p=None, g=1, act=True):
+  142:         """Initializes Focus object with user defined channel, convolution, padding, group and activation values."""
+  143          super().__init__()
+
+  160      def __init__(self, c1, c2, k=1, s=1, g=1, act=True):
+  161:         """Initializes the GhostConv object with input channels, output channels, kernel size, stride, groups and
+  162          activation.
+
+  164          super().__init__()
+  165:         c_ = c2 // 2  # hidden channels
+  166          self.cv1 = Conv(c1, c_, k, s, None, g, act=act)
+
+  254          self.conv = nn.Conv2d(
+  255:             in_channels=self.conv1.conv.in_channels,
+  256:             out_channels=self.conv1.conv.out_channels,
+  257              kernel_size=self.conv1.conv.kernel_size,
+
+  277  
+  278: class ChannelAttention(nn.Module):
+  279:     """Channel-attention module https://github.com/open-mmlab/mmdetection/tree/v3.0.0rc1/configs/rtmdet."""
+  280  
+  281:     def __init__(self, channels: int) -> None:
+  282          """Initializes the class and sets the basic configurations and instance variables required."""
+
+  284          self.pool = nn.AdaptiveAvgPool2d(1)
+  285:         self.fc = nn.Conv2d(channels, channels, 1, 1, 0, bias=True)
+  286          self.act = nn.Sigmoid()
+
+  304      def forward(self, x):
+  305:         """Apply channel and spatial attention on input for feature recalibration."""
+  306          return x * self.act(self.cv1(torch.cat([torch.mean(x, 1, keepdim=True), torch.max(x, 1, keepdim=True)[0]], 1)))
+
+  312      def __init__(self, c1, kernel_size=7):
+  313:         """Initialize CBAM with given input channel (c1) and kernel size."""
+  314          super().__init__()
+  315:         self.channel_attention = ChannelAttention(c1)
+  316          self.spatial_attention = SpatialAttention(kernel_size)
+
+  319          """Applies the forward pass through C1 module."""
+  320:         return self.spatial_attention(self.channel_attention(x))
+  321  
+
+nn/modules/head.py:
+   29      def __init__(self, nc=80, ch=()):
+   30:         """Initializes the YOLOv8 detection layer with specified number of classes and channels."""
+   31          super().__init__()
+
+   33          self.nl = len(ch)  # number of detection layers
+   34:         self.reg_max = 16  # DFL channels (ch[0] // 16 to scale 4/8/12/16/20 for n/s/m/l/x)
+   35          self.no = nc + self.reg_max * 4  # number of outputs per anchor
+   36          self.stride = torch.zeros(self.nl)  # strides computed during build
+   37:         c2, c3 = max((16, ch[0] // 4, self.reg_max * 4)), max(ch[0], min(self.nc, 100))  # channels
+   38          self.cv2 = nn.ModuleList(
+
+  121      def __init__(self, nc=80, ne=1, ch=()):
+  122:         """Initialize OBB with number of classes `nc` and layer channels `ch`."""
+  123          super().__init__(nc, ch)
+
+  193      def __init__(self, c1, c2, k=1, s=1, p=None, g=1):
+  194:         """Initializes YOLOv8 classification head with specified input and output channels, kernel size, stride,
+  195          padding, and groups.
+
+  213      def __init__(self, nc=80, embed=512, with_bn=False, ch=()):
+  214:         """Initialize YOLOv8 detection layer with nc classes and layer channels ch."""
+  215          super().__init__(nc, ch)
+
+  298              nc (int): Number of classes. Default is 80.
+  299:             ch (tuple): Channels in the backbone feature maps. Default is (512, 1024, 2048).
+  300              hd (int): Dimension of hidden layers. Default is 256.
+
+nn/modules/transformer.py:
+  200  
+  201:     def __init__(self, num_channels, eps=1e-6):
+  202          """Initialize LayerNorm2d with the given parameters."""
+  203          super().__init__()
+  204:         self.weight = nn.Parameter(torch.ones(num_channels))
+  205:         self.bias = nn.Parameter(torch.zeros(num_channels))
+  206          self.eps = eps
+
+utils/loss.py:
+  190          if self.use_dfl:
+  191:             b, a, c = pred_dist.shape  # batch, anchors, channels
+  192              pred_dist = pred_dist.view(b, a, 4, c // 4).softmax(3).matmul(self.proj.type(pred_dist.dtype))
+
+  713          if self.use_dfl:
+  714:             b, a, c = pred_dist.shape  # batch, anchors, channels
+  715              pred_dist = pred_dist.view(b, a, 4, c // 4).softmax(3).matmul(self.proj.type(pred_dist.dtype))
+
+utils/ops.py:
+  830      Args:
+  831:         batch (torch.Tensor): Input tensor batch of shape (Batch, Channels, Height, Width) and dtype torch.float32.
+  832  
+  833      Returns:
+  834:         (np.ndarray): Output NumPy array batch of shape (Batch, Height, Width, Channels) and dtype uint8.
+  835      """
+
+utils/plotting.py:
+   232  
+   233:         im_gpu = im_gpu.flip(dims=[0])  # flip channel
+   234          im_gpu = im_gpu.permute(1, 2, 0).contiguous()  # shape(h,w,3)
+
+   827          (G, B, D, R) = cv2.split(images[i])
+   828:         print('shape of channels: ', G.shape, ', ', B.shape, ', ', D.shape, ', ', R.shape)
+   829          merged = cv2.merge([R, G, B])
+
+  1117              return
+  1118:     _, channels, height, width = x.shape  # batch, channels, height, width
+  1119      if height > 1 and width > 1:
+
+  1121  
+  1122:         blocks = torch.chunk(x[0].cpu(), channels, dim=0)  # select batch index 0, block by channels
+  1123:         n = min(n, channels)  # number of plots
+  1124          _, ax = plt.subplots(math.ceil(n / 8), 8, tight_layout=True)  # 8 rows x n/8 cols
+
+  1130  
+  1131:         LOGGER.info(f"Saving {f}... ({n}/{channels})")
+  1132          plt.savefig(f, dpi=300, bbox_inches="tight")
+
+utils/torch_utils.py:
+  182          nn.Conv2d(
+  183:             conv.in_channels,
+  184:             conv.out_channels,
+  185              kernel_size=conv.kernel_size,
+
+  196      # Prepare filters
+  197:     w_conv = conv.weight.clone().view(conv.out_channels, -1)
+  198      w_bn = torch.diag(bn.weight.div(torch.sqrt(bn.eps + bn.running_var)))
+
+  212          nn.ConvTranspose2d(
+  213:             deconv.in_channels,
+  214:             deconv.out_channels,
+  215              kernel_size=deconv.kernel_size,
+
+  227      # Prepare filters
+  228:     w_deconv = deconv.weight.clone().view(deconv.out_channels, -1)
+  229      w_bn = torch.diag(bn.weight.div(torch.sqrt(bn.eps + bn.running_var)))
+
+utils/tuner.py:
+  80          "fliplr": tune.uniform(0.0, 1.0),  # image flip left-right (probability)
+  81:         "bgr": tune.uniform(0.0, 1.0),  # image channel BGR (probability)
+  82          "mosaic": tune.uniform(0.0, 1.0),  # image mixup (probability)
