@@ -8,13 +8,5 @@ Main modifications are:
 - change how the mosaic is generated for logging (plotting)
 - change every variable for channel number from 3 to 4.
 
-A more detailed description can be found in this document:
-
+Step of my modifications can be found in this document:
 [My steps to modify YOLO to YOLO with 4 channels.pdf](https://github.com/g-h-anna/ultralytics4channel/files/15223626/My.steps.to.modify.YOLO.to.YOLO.with.4.channels.pdf)
-
-For this type of error:
-![image](https://github.com/g-h-anna/ultralytics4channel/assets/74008708/92433d30-feb6-47c8-8306-eaa53609a87a)
-
-
-this was the required change:
-![image](https://github.com/g-h-anna/ultralytics4channel/assets/74008708/89e97ce1-ef8b-4e1b-a647-7444f3d98533)
