@@ -10,3 +10,14 @@ Main modifications are:
 
 Step of my modifications can be found in this document:
 [My steps to modify YOLO to YOLO with 4 channels.pdf](https://github.com/g-h-anna/ultralytics4channel/files/15223626/My.steps.to.modify.YOLO.to.YOLO.with.4.channels.pdf)
+
+If you use my modifications, please cite this repository.
+
+@misc{GHA-ultralytics4ch,
+  author = {Anna Gelencsér-Horváth},
+  title = {Modify Ultralytics 8.2.5 to accept 4-channel images for training and prediction},
+  year = {2024},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/g-h-anna/ultralytics4channel}},
+}
