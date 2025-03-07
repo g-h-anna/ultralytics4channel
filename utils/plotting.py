@@ -817,22 +817,21 @@ def plot_images(
         images *= 255  # de-normalise (optional)
 
     # Build Image
-    print('BATCH SIZE IS: ', bs)
+    #print('BATCH SIZE IS: ', bs)
     mosaic = np.full((int(ns * h), int(ns * w), 3), 255, dtype=np.uint8)  # init
     #mosaic = np.full((int(ns * h), int(ns * w), 4), 255, dtype=np.uint8)  # init
     for i in range(bs):
         images[i] = images[i].astype(np.uint8)
-
-        print('shape of image: ', images[i].shape)
-        print('type of image: ', images[i].dtype)
         x, y = int(w * (i // ns)), int(h * (i % ns))  # block origin
         #mosaic[y : y + h, x : x + w, :] = images[i].transpose(1, 2, 0)
         #(G, B, D, R) = cv2.split(images[i].astype(np.uint8))
-        #print('shape of channels: ', G.shape, ', ', B.shape, ', ', D.shape, ', ', R.shape)
         channels = cv2.split(images[i].astype(np.uint8))
-        print("channels: ", channels)
-        print('len channels:', len(channels))
-        (G,B,R,D) = channels[0]
+        # according to github:
+        #(G, B, D, R) = channels[0]
+
+        (D, R, G, B) = channels[0] # if train imgs are saved as RGBD
+        #(D, B, G, R) = channels[0] # if you have BGRD train imgs
+        
         merged = cv2.merge([R, G, B])
         mosaic[y:y + h, x:x + w, :] = merged
 
@@ -850,7 +849,8 @@ def plot_images(
         x, y = int(w * (i // ns)), int(h * (i % ns))  # block origin
         annotator.rectangle([x, y, x + w, y + h], None, (255, 255, 255), width=2)  # borders
         if paths:
-            annotator.text((x + 5, y + 5), text=Path(paths[i]).name[:40], txt_color=(220, 220, 220))  # filenames
+            #annotator.text((x + 5, y + 5), text=Path(paths[i]).name[:40], txt_color=(220, 220, 220))  # filenames
+            annotator.text((x + 5, y + 5), text=Path(paths[i]).name[-23:-17] + Path(paths[i]).name[-7:], txt_color=(220, 220, 220))  # filenames
         if len(cls) > 0:
             idx = batch_idx == i
             classes = cls[idx].astype("int")
