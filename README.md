@@ -1,5 +1,6 @@
 # ultralytics4channel
 Ultralytics 8.2.5 modified to train and predict for 4-channel (RGBD) images.
+https://github.com/g-h-anna/ultralytics4channel 
 
 In this repository I modified the source code of ULtralytics to allow training and prediction for 4-channel images.
 Main modifications are:
