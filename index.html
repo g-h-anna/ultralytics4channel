@@ -1,8 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <meta name="citation_title" content="Modified Ultralytics 8.2.5 to accept 4-channel images for training and prediction">
   <meta name="citation_author" content="Anna Gelencsér-Horváth">
   <meta name="citation_publication_date" content="2024">
   <meta name="citation_pdf_url" content="https://github.com/g-h-anna/ultralytics4channel/blob/main/HowToModifyUltralytics8.2.5.toAccept4channelImages.pdf">
   <meta name="citation_technical_report_number" content="v1.0.0">
-  <title>Modified Ultralytics 8.2.5 to accept 4-channel images for training and prediction</title>
+  
+  <title>ultralytics4channel - Modified YOLOv8</title>
+  
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #24292e; }
+    h1 { border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; }
+    code, pre { background-color: #f6f8fa; border-radius: 3px; padding: 10px; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; }
+    pre { overflow-x: auto; border: 1px solid #dfe2e5; }
+    a { color: #0366d6; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
 </head>
+
+<body>
+
+  <h1>ultralytics4channel</h1>
+  <p>Ultralytics 8.2.5 modified to train and predict for 4-channel (RGBD) images.<br>
+  <a href="https://github.com/g-h-anna/ultralytics4channel">https://github.com/g-h-anna/ultralytics4channel</a></p>
+
+  <p>In this repository I modified the source code of Ultralytics to allow training and prediction for 4-channel images. Main modifications are:</p>
+
+  <ul>
+    <li>Changing <code>cv2.imread()</code> functions to include <code>cv2.IMREAD_UNCHANGED</code></li>
+    <li>Changing how the mosaic is generated for logging (plotting)</li>
+    <li>Changing every variable for channel number from 3 to 4</li>
+  </ul>
+
+  <p>You find the steps in the <strong>pdf file</strong> included in the repository.</p>
+
+  <p>If you use my modifications, please cite this repository:</p>
+
+<pre>
+@misc{GHA-ultralytics4ch,
+  author = {Anna Gelencsér-Horváth},
+  title = {Modify Ultralytics 8.2.5 to accept 4-channel images for training and prediction},
+  year = {2024},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/g-h-anna/ultralytics4channel}},
+}
+</pre>
+
+  <p><strong>Contact:</strong><br>
+  <code>gha@itk.ppke.hu</code></p>
+
+</body>
+</html>
